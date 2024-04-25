@@ -69,7 +69,7 @@
 .container-btns-nav{
     text-align: end;
     background-color: rgb(29, 152, 224);
-    padding: 1rem;
+    padding: .3rem 2rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px black;
     position: absolute;
@@ -84,6 +84,7 @@
 .btn-nav{
     text-decoration: none;
     color: white;
+    font-size: .8rem;
 }
 
 /* 1.1.2 ESTILOS BOTON ABRIR */
