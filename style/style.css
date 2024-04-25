@@ -28,7 +28,7 @@
 .nav{
     min-width: 60%;
     background-color: rgb(24, 23, 23);
-    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1.5rem black;
     bottom: 0;
     position: absolute;
     top: 0;
@@ -78,10 +78,10 @@
 }
 
 .container-btns-nav li{
-    padding: .5rem 0;
+    padding: .2rem 0;
 }
 
-.btn-nav{
+.btn-nav-hover{
     text-decoration: none;
     color: white;
     font-size: .8rem;
@@ -115,22 +115,27 @@
 /* 2 ESTILOS MEDIDA DE TABLET */
 @media screen and (min-width: 768px){
 
+    /* ESTILOS HEADER */
     .header{
         padding: 2rem 3rem;
     }
 
+    /* ESTILO BOTON ABRIR */
     .abrir-menu{
         display: none;
     }
 
+    /* ESTILO BOTON CERRAR */
     .cerrar-nav{
         display: none;
     }
 
+    /* ESTILO NAV */
     .nav{
         opacity: 1;
         position: relative;
         padding: 0;
+        align-items: end;
     }
 
     .title-nav{
@@ -148,18 +153,19 @@
         align-items: center;
     }
 
-    .nav-menu li a{
+    .nav-item{
         font-size: 1rem;
+        padding: .3rem .7rem;
+        border-radius: 1rem;
+        transition: .3s linear all;
     }
 
-    .btn-nav{
-        padding: .5rem;
+    .nav-item:hover{
+        background-color: white;
+        color: rgb(29, 152, 224);
+        font-weight: 500;
     }
-
-    .btn-nav-border{
-        border-right: 1px solid white;
-    }
-
+    /* ESTILOS BOTONES REGISTRO E INICIO */
     .container-btns-nav{
         display: flex;
         background-color: rgb(29, 152, 224);
@@ -168,14 +174,23 @@
         border-radius: 2rem;
         position: initial;
     }
+
+    .btn-nav-hover{
+        padding: .5rem;
+        border-radius: 2rem;
+        transition: .3s linear all;
+        font-size: 1rem;
+    }
+
+    .container-btns-nav .btn-nav-hover:hover{
+        background-color: rgb(45, 64, 240);
+    }
 }
 
 /* 3 ESTILO DESKTOP */
 @media screen and (min-width: 998px){
     .header{
-        padding: 2rem 3.5rem;
+        padding: 2rem 6rem;
     }
-
-    
 }
 
