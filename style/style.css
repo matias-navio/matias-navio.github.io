@@ -80,10 +80,6 @@
     padding: .5rem 0;
 }
 
-.separador{
-    display: none;
-}
-
 /* 1.1.2 ESTILOS BOTON ABRIR */
 .abrir-menu{
     background-color: transparent;
@@ -128,10 +124,13 @@
         opacity: 1;
         position: relative;
         padding: 0;
-        flex-grow: 1;
     }
 
     .title-nav{
+        display: none;
+    }
+
+    .separador-movile{
         display: none;
     }
 
@@ -150,12 +149,17 @@
         padding: .5rem;
     }
 
+    .btn-nav-border{
+        border-right: 1px solid white;
+    }
+
     .container-btns-nav{
         display: flex;
         background-color: rgb(29, 152, 224);
         color: white;
         padding: .5rem;
         border-radius: 2rem;
+        position: initial;
     }
 
     
@@ -167,5 +171,7 @@
     .header{
         padding: 2rem 3.5rem;
     }
+
+    
 }
 
