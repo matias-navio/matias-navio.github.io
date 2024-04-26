@@ -18,11 +18,6 @@ cerrar.addEventListener('click', ()=>{
     nav.classList.remove("visible")
 })
 
-inicio.addEventListener('mouseover', () =>{
-    inicio.classList.add(".btn-inicio-hover");
-})
 
-inicio.addEventListener('mouseout', () =>{
-    prueba.classList.add(".btn-inicio-hover");
-})
+
 
